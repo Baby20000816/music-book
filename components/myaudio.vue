@@ -1,3 +1,4 @@
+
 <template>
 	<view class="fixed-bottom rounded mx-2 mb-1" style="height: 160rpx;background-color: #d1ccc0;opacity: .9;" @tap="toDetailPage">
 		<!-- 进度部分 -->
@@ -73,8 +74,9 @@
 				'sliderToPlay'
 			]),
 			toDetailPage() {
+				console.log('点击了这个e')
 				uni.navigateTo({
-					url: '/pages/music-detail/music-detail'
+					url: '../../pages/musicDetail/musicDetail'
 				});
 			}
 		},
