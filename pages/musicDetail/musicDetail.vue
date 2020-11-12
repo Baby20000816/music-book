@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view style="height: 100vh;" :class="nightStatus?'nightTheme':''">
 		<view class="d-inline-block w-100 text-center py-4">
 			<view>
 				<text class="font">歌曲:</text>
@@ -44,8 +44,8 @@
 					<my-icon iconId="icon-icon--" iconSize="60"></my-icon>
 					<text class="pt-1">收藏</text>
 				</view>
-				<view class="flex flex-column align-center">
-					<my-icon iconId="icon-icon--" iconSize="60"></my-icon>
+				<view class="flex flex-column align-center" @tap="changeStatus('nightStatus')">
+					<my-icon :iconId="!nightStatus?'icon-yejianmoshi':'icon-yueliang'" iconSize="60"></my-icon>
 					<text class="pt-1">夜间模式</text>
 				</view>
 			</view>
@@ -93,7 +93,11 @@ import unit from '../../common/unit.js';
 import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';
 export default {
 	data() {
-		return {};
+		return {
+			listStatus: false, //
+			collectStatus: false,
+			nightStatus: false
+		};
 	},
 	filters: {
 		formatTime(num) {
@@ -101,7 +105,10 @@ export default {
 		}
 	},
 	methods: {
-		...mapActions(['sliderToPlay'])
+		...mapActions(['sliderToPlay']),
+		changeStatus(statusType){
+			this[statusType]=!this[statusType]
+		}
 	},
 	computed: {
 		...mapState({

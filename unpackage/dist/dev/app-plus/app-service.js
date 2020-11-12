@@ -1756,316 +1756,350 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("view", [
-    _c(
-      "view",
-      {
-        staticClass: _vm._$s(1, "sc", "d-inline-block w-100 text-center py-4"),
-        attrs: { _i: 1 }
-      },
-      [
-        _c("view", [
-          _c("text", {
-            staticClass: _vm._$s(3, "sc", "font"),
-            attrs: { _i: 3 }
-          }),
-          _c(
-            "text",
-            {
-              staticClass: _vm._$s(4, "sc", "font-weight-bold"),
-              attrs: { _i: 4 }
-            },
-            [_vm._v(_vm._$s(4, "t0-0", _vm._s(_vm.audioName)))]
-          )
-        ]),
-        _c("view", [
-          _c("text", {
-            staticClass: _vm._$s(6, "sc", "font"),
-            attrs: { _i: 6 }
-          }),
-          _c(
-            "text",
-            {
-              staticClass: _vm._$s(7, "sc", "font-weight-bold"),
-              attrs: { _i: 7 }
-            },
-            [_vm._v(_vm._$s(7, "t0-0", _vm._s(_vm.singerName)))]
-          )
-        ])
-      ]
-    ),
-    _c(
-      "view",
-      {
-        staticClass: _vm._$s(8, "sc", "flex align-center justify-center"),
-        attrs: { _i: 8 }
-      },
-      [
-        _c("img", {
-          attrs: {
-            src: _vm._$s(9, "a-src", __webpack_require__(/*! ../../static/music/0.jpeg */ 24)),
-            _i: 9
-          }
-        })
-      ]
-    ),
-    _c(
-      "view",
-      {
-        staticClass: _vm._$s(10, "sc", "flex align-center justify-center font"),
-        attrs: { _i: 10 }
-      },
-      [
-        _c("view", [
-          _vm._v(
-            _vm._$s(11, "t0-0", _vm._s(_vm._f("formatTime")(_vm.durationTime)))
-          )
-        ])
-      ]
-    ),
-    _c("view", [
-      _c("slider", {
-        attrs: {
-          max: _vm._$s(13, "a-max", _vm.durationTime),
-          value: _vm._$s(13, "a-value", _vm.currentTime),
-          _i: 13
-        },
-        on: { change: _vm.sliderToPlay, changing: _vm.sliderToPlay }
-      }),
-      _c("view", [
-        _vm._v(
-          _vm._$s(14, "t0-0", _vm._s(_vm._f("formatTime")(_vm.currentTime)))
-        )
-      ])
-    ]),
-    _c("view", [
+  return _c(
+    "view",
+    {
+      class: _vm._$s(0, "c", _vm.nightStatus ? "nightTheme" : ""),
+      attrs: { _i: 0 }
+    },
+    [
       _c(
         "view",
         {
           staticClass: _vm._$s(
-            16,
+            1,
             "sc",
-            "flex align-center justify-center font text-light-black"
+            "d-inline-block w-100 text-center py-4"
           ),
-          attrs: { _i: 16 }
+          attrs: { _i: 1 }
         },
         [
-          _c(
-            "view",
-            {
-              staticClass: _vm._$s(17, "sc", "flex flex-column align-center"),
-              attrs: { _i: 17 }
-            },
-            [
-              _c("my-icon", {
-                attrs: { iconId: "icon-icon--", iconSize: "60", _i: 18 }
-              }),
-              _c("text", {
-                staticClass: _vm._$s(19, "sc", "pt-1"),
-                attrs: { _i: 19 }
-              })
-            ],
-            1
-          ),
-          _c(
-            "view",
-            {
-              staticClass: _vm._$s(20, "sc", "flex flex-column align-center"),
-              attrs: { _i: 20 }
-            },
-            [
-              _c("my-icon", {
-                attrs: { iconId: "icon-icon--", iconSize: "60", _i: 21 }
-              }),
-              _c("text", {
-                staticClass: _vm._$s(22, "sc", "pt-1"),
-                attrs: { _i: 22 }
-              })
-            ],
-            1
-          ),
-          _c(
-            "view",
-            {
-              staticClass: _vm._$s(23, "sc", "flex flex-column align-center"),
-              attrs: { _i: 23 }
-            },
-            [
-              _c("my-icon", {
-                attrs: { iconId: "icon-icon--", iconSize: "60", _i: 24 }
-              }),
-              _c("text", {
-                staticClass: _vm._$s(25, "sc", "pt-1"),
-                attrs: { _i: 25 }
-              })
-            ],
-            1
-          )
-        ]
-      )
-    ]),
-    _c(
-      "view",
-      {
-        staticClass: _vm._$s(26, "sc", "flex justify-between"),
-        attrs: { _i: 26 }
-      },
-      [
-        _c("view", [
           _c("view", [
             _c("text", {
-              staticClass: _vm._$s(29, "sc", "font"),
-              attrs: { _i: 29 }
+              staticClass: _vm._$s(3, "sc", "font"),
+              attrs: { _i: 3 }
             }),
             _c(
               "text",
               {
-                staticClass: _vm._$s(30, "sc", "font-weight-bold"),
-                attrs: { _i: 30 }
+                staticClass: _vm._$s(4, "sc", "font-weight-bold"),
+                attrs: { _i: 4 }
               },
-              [_vm._v(_vm._$s(30, "t0-0", _vm._s(_vm.audioName)))]
+              [_vm._v(_vm._$s(4, "t0-0", _vm._s(_vm.audioName)))]
             )
           ]),
           _c("view", [
             _c("text", {
-              staticClass: _vm._$s(32, "sc", "font"),
-              attrs: { _i: 32 }
+              staticClass: _vm._$s(6, "sc", "font"),
+              attrs: { _i: 6 }
             }),
             _c(
               "text",
               {
-                staticClass: _vm._$s(33, "sc", "font-weight-bold"),
-                attrs: { _i: 33 }
+                staticClass: _vm._$s(7, "sc", "font-weight-bold"),
+                attrs: { _i: 7 }
               },
-              [_vm._v(_vm._$s(33, "t0-0", _vm._s(_vm.singerName)))]
+              [_vm._v(_vm._$s(7, "t0-0", _vm._s(_vm.singerName)))]
             )
           ])
-        ]),
-        _c("my-icon", {
-          attrs: { iconId: "icon-jieshao", iconSize: "65", _i: 34 }
-        })
-      ],
-      1
-    ),
-    _c("view", [
-      _c("view", {
-        staticClass: _vm._$s(36, "sc", "font-md pt-2"),
-        attrs: { _i: 36 }
-      }),
+        ]
+      ),
       _c(
         "view",
         {
-          staticClass: _vm._$s(37, "sc", "text-ellipsis w-100"),
-          attrs: { _i: 37 }
+          staticClass: _vm._$s(8, "sc", "flex align-center justify-center"),
+          attrs: { _i: 8 }
         },
-        [_vm._v(_vm._$s(37, "t0-0", _vm._s(_vm.singerSynopsis)))]
-      )
-    ]),
-    _c(
-      "view",
-      {
-        staticClass: _vm._$s(38, "sc", "fixed-bottom shadow p-2"),
-        attrs: { _i: 38 }
-      },
-      [
+        [
+          _c("img", {
+            attrs: {
+              src: _vm._$s(9, "a-src", __webpack_require__(/*! ../../static/music/0.jpeg */ 24)),
+              _i: 9
+            }
+          })
+        ]
+      ),
+      _c(
+        "view",
+        {
+          staticClass: _vm._$s(
+            10,
+            "sc",
+            "flex align-center justify-center font"
+          ),
+          attrs: { _i: 10 }
+        },
+        [
+          _c("view", [
+            _vm._v(
+              _vm._$s(
+                11,
+                "t0-0",
+                _vm._s(_vm._f("formatTime")(_vm.durationTime))
+              )
+            )
+          ])
+        ]
+      ),
+      _c("view", [
+        _c("slider", {
+          attrs: {
+            max: _vm._$s(13, "a-max", _vm.durationTime),
+            value: _vm._$s(13, "a-value", _vm.currentTime),
+            _i: 13
+          },
+          on: { change: _vm.sliderToPlay, changing: _vm.sliderToPlay }
+        }),
+        _c("view", [
+          _vm._v(
+            _vm._$s(14, "t0-0", _vm._s(_vm._f("formatTime")(_vm.currentTime)))
+          )
+        ])
+      ]),
+      _c("view", [
+        _c(
+          "view",
+          {
+            staticClass: _vm._$s(
+              16,
+              "sc",
+              "flex align-center justify-center font text-light-black"
+            ),
+            attrs: { _i: 16 }
+          },
+          [
+            _c(
+              "view",
+              {
+                staticClass: _vm._$s(17, "sc", "flex flex-column align-center"),
+                attrs: { _i: 17 }
+              },
+              [
+                _c("my-icon", {
+                  attrs: { iconId: "icon-icon--", iconSize: "60", _i: 18 }
+                }),
+                _c("text", {
+                  staticClass: _vm._$s(19, "sc", "pt-1"),
+                  attrs: { _i: 19 }
+                })
+              ],
+              1
+            ),
+            _c(
+              "view",
+              {
+                staticClass: _vm._$s(20, "sc", "flex flex-column align-center"),
+                attrs: { _i: 20 }
+              },
+              [
+                _c("my-icon", {
+                  attrs: { iconId: "icon-icon--", iconSize: "60", _i: 21 }
+                }),
+                _c("text", {
+                  staticClass: _vm._$s(22, "sc", "pt-1"),
+                  attrs: { _i: 22 }
+                })
+              ],
+              1
+            ),
+            _c(
+              "view",
+              {
+                staticClass: _vm._$s(23, "sc", "flex flex-column align-center"),
+                attrs: { _i: 23 },
+                on: {
+                  click: function($event) {
+                    return _vm.changeStatus("nightStatus")
+                  }
+                }
+              },
+              [
+                _c("my-icon", {
+                  attrs: {
+                    iconId: !_vm.nightStatus
+                      ? "icon-yejianmoshi"
+                      : "icon-yueliang",
+                    iconSize: "60",
+                    _i: 24
+                  }
+                }),
+                _c("text", {
+                  staticClass: _vm._$s(25, "sc", "pt-1"),
+                  attrs: { _i: 25 }
+                })
+              ],
+              1
+            )
+          ]
+        )
+      ]),
+      _c(
+        "view",
+        {
+          staticClass: _vm._$s(26, "sc", "flex justify-between"),
+          attrs: { _i: 26 }
+        },
+        [
+          _c("view", [
+            _c("view", [
+              _c("text", {
+                staticClass: _vm._$s(29, "sc", "font"),
+                attrs: { _i: 29 }
+              }),
+              _c(
+                "text",
+                {
+                  staticClass: _vm._$s(30, "sc", "font-weight-bold"),
+                  attrs: { _i: 30 }
+                },
+                [_vm._v(_vm._$s(30, "t0-0", _vm._s(_vm.audioName)))]
+              )
+            ]),
+            _c("view", [
+              _c("text", {
+                staticClass: _vm._$s(32, "sc", "font"),
+                attrs: { _i: 32 }
+              }),
+              _c(
+                "text",
+                {
+                  staticClass: _vm._$s(33, "sc", "font-weight-bold"),
+                  attrs: { _i: 33 }
+                },
+                [_vm._v(_vm._$s(33, "t0-0", _vm._s(_vm.singerName)))]
+              )
+            ])
+          ]),
+          _c("my-icon", {
+            attrs: { iconId: "icon-jieshao", iconSize: "65", _i: 34 }
+          })
+        ],
+        1
+      ),
+      _c("view", [
         _c("view", {
-          staticClass: _vm._$s(39, "sc", "font-weight-bold font-md"),
-          attrs: { _i: 39 }
+          staticClass: _vm._$s(36, "sc", "font-md pt-2"),
+          attrs: { _i: 36 }
         }),
         _c(
-          "scroll-view",
-          { attrs: { _i: 40 } },
-          [
-            _vm._l(_vm._$s(41, "f", { forItems: _vm.audioList }), function(
-              item,
-              index,
-              $20,
-              $30
-            ) {
-              return [
-                _c(
-                  "view",
-                  {
-                    key: _vm._$s(41, "f", {
-                      forIndex: $20,
-                      keyIndex: 0,
-                      key: item.id + "_0"
-                    }),
-                    staticClass: _vm._$s(
-                      "42-" + $30,
-                      "sc",
-                      "flex align-center font px-2"
-                    ),
-                    attrs: { _i: "42-" + $30 }
-                  },
-                  [
-                    _c(
-                      "text",
-                      {
-                        staticClass: _vm._$s(
-                          "43-" + $30,
-                          "sc",
-                          "flex-1 text-ellipsis"
-                        ),
-                        attrs: { _i: "43-" + $30 }
-                      },
-                      [
-                        _vm._v(
-                          _vm._$s("43-" + $30, "t0-0", _vm._s(item.audioName))
-                        )
-                      ]
-                    ),
-                    _c(
-                      "text",
-                      {
-                        staticClass: _vm._$s(
-                          "44-" + $30,
-                          "sc",
-                          "flex-1 text-ellipsis"
-                        ),
-                        attrs: { _i: "44-" + $30 }
-                      },
-                      [
-                        _vm._v(
-                          _vm._$s("44-" + $30, "t0-0", _vm._s(item.singerName))
-                        )
-                      ]
-                    ),
-                    _c(
-                      "view",
-                      {
-                        staticClass: _vm._$s(
-                          "45-" + $30,
-                          "sc",
-                          "flex-1 ml-3 flex align-center"
-                        ),
-                        attrs: { _i: "45-" + $30 }
-                      },
-                      [
-                        _c("text", {
-                          staticClass: _vm._$s("46-" + $30, "sc", "mr-2"),
-                          attrs: { _i: "46-" + $30 }
-                        }),
-                        _c("my-icon", {
-                          attrs: {
-                            iconId: "icon-bofangsanjiaoxing",
-                            iconSize: "40",
-                            _i: "47-" + $30
-                          }
-                        })
-                      ],
-                      1
-                    )
-                  ]
-                )
-              ]
-            })
-          ],
-          2
+          "view",
+          {
+            staticClass: _vm._$s(37, "sc", "text-ellipsis w-100"),
+            attrs: { _i: 37 }
+          },
+          [_vm._v(_vm._$s(37, "t0-0", _vm._s(_vm.singerSynopsis)))]
         )
-      ]
-    )
-  ])
+      ]),
+      _c(
+        "view",
+        {
+          staticClass: _vm._$s(38, "sc", "fixed-bottom shadow p-2"),
+          attrs: { _i: 38 }
+        },
+        [
+          _c("view", {
+            staticClass: _vm._$s(39, "sc", "font-weight-bold font-md"),
+            attrs: { _i: 39 }
+          }),
+          _c(
+            "scroll-view",
+            { attrs: { _i: 40 } },
+            [
+              _vm._l(_vm._$s(41, "f", { forItems: _vm.audioList }), function(
+                item,
+                index,
+                $20,
+                $30
+              ) {
+                return [
+                  _c(
+                    "view",
+                    {
+                      key: _vm._$s(41, "f", {
+                        forIndex: $20,
+                        keyIndex: 0,
+                        key: item.id + "_0"
+                      }),
+                      staticClass: _vm._$s(
+                        "42-" + $30,
+                        "sc",
+                        "flex align-center font px-2"
+                      ),
+                      attrs: { _i: "42-" + $30 }
+                    },
+                    [
+                      _c(
+                        "text",
+                        {
+                          staticClass: _vm._$s(
+                            "43-" + $30,
+                            "sc",
+                            "flex-1 text-ellipsis"
+                          ),
+                          attrs: { _i: "43-" + $30 }
+                        },
+                        [
+                          _vm._v(
+                            _vm._$s("43-" + $30, "t0-0", _vm._s(item.audioName))
+                          )
+                        ]
+                      ),
+                      _c(
+                        "text",
+                        {
+                          staticClass: _vm._$s(
+                            "44-" + $30,
+                            "sc",
+                            "flex-1 text-ellipsis"
+                          ),
+                          attrs: { _i: "44-" + $30 }
+                        },
+                        [
+                          _vm._v(
+                            _vm._$s(
+                              "44-" + $30,
+                              "t0-0",
+                              _vm._s(item.singerName)
+                            )
+                          )
+                        ]
+                      ),
+                      _c(
+                        "view",
+                        {
+                          staticClass: _vm._$s(
+                            "45-" + $30,
+                            "sc",
+                            "flex-1 ml-3 flex align-center"
+                          ),
+                          attrs: { _i: "45-" + $30 }
+                        },
+                        [
+                          _c("text", {
+                            staticClass: _vm._$s("46-" + $30, "sc", "mr-2"),
+                            attrs: { _i: "46-" + $30 }
+                          }),
+                          _c("my-icon", {
+                            attrs: {
+                              iconId: "icon-bofangsanjiaoxing",
+                              iconSize: "40",
+                              _i: "47-" + $30
+                            }
+                          })
+                        ],
+                        1
+                      )
+                    ]
+                  )
+                ]
+              })
+            ],
+            2
+          )
+        ]
+      )
+    ]
+  )
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -2103,7 +2137,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _D_H
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _unit = _interopRequireDefault(__webpack_require__(/*! ../../common/unit.js */ 18));\nvar _vuex = __webpack_require__(/*! vuex */ 19);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n{\n  data: function data() {\n    return {};\n  },\n  filters: {\n    formatTime: function formatTime(num) {\n      return _unit.default.formatTime(num);\n    } },\n\n  methods: _objectSpread({},\n  (0, _vuex.mapActions)(['sliderToPlay'])),\n\n  computed: _objectSpread(_objectSpread({},\n  (0, _vuex.mapState)({\n    durationTime: function durationTime(_ref) {var audio = _ref.audio;return audio.durationTime;},\n    currentTime: function currentTime(_ref2) {var audio = _ref2.audio;return audio.currentTime;},\n    audioList: function audioList(_ref3) {var audio = _ref3.audio;return audio.audioList;} })),\n\n  (0, _vuex.mapGetters)(['audioName', 'singerName', 'singerSynopsis'])) };exports.default = _default;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVuaS1hcHA6Ly8vcGFnZXMvbXVzaWNEZXRhaWwvbXVzaWNEZXRhaWwudnVlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUEyRkE7QUFDQSxnRDtBQUNBO0FBQ0EsTUFEQSxrQkFDQTtBQUNBO0FBQ0EsR0FIQTtBQUlBO0FBQ0EsY0FEQSxzQkFDQSxHQURBLEVBQ0E7QUFDQTtBQUNBLEtBSEEsRUFKQTs7QUFTQTtBQUNBLHlDQURBLENBVEE7O0FBWUE7QUFDQTtBQUNBLGlHQURBO0FBRUEsZ0dBRkE7QUFHQSwwRkFIQSxHQURBOztBQU1BLHNFQU5BLENBWkEsRSIsImZpbGUiOiIyNi5qcyIsInNvdXJjZXNDb250ZW50IjpbIjx0ZW1wbGF0ZT5cclxuXHQ8dmlldz5cclxuXHRcdDx2aWV3IGNsYXNzPVwiZC1pbmxpbmUtYmxvY2sgdy0xMDAgdGV4dC1jZW50ZXIgcHktNFwiPlxyXG5cdFx0XHQ8dmlldz5cclxuXHRcdFx0XHQ8dGV4dCBjbGFzcz1cImZvbnRcIj7mrYzmm7I6PC90ZXh0PlxyXG5cdFx0XHRcdDx0ZXh0IGNsYXNzPVwiZm9udC13ZWlnaHQtYm9sZFwiPnt7IGF1ZGlvTmFtZSB9fTwvdGV4dD5cclxuXHRcdFx0PC92aWV3PlxyXG5cdFx0XHQ8dmlldz5cclxuXHRcdFx0XHQ8dGV4dCBjbGFzcz1cImZvbnRcIj7mrYzmiYs6PC90ZXh0PlxyXG5cdFx0XHRcdDx0ZXh0IGNsYXNzPVwiZm9udC13ZWlnaHQtYm9sZFwiPnt7IHNpbmdlck5hbWUgfX08L3RleHQ+XHJcblx0XHRcdDwvdmlldz5cclxuXHRcdDwvdmlldz5cclxuXHRcdDx2aWV3IGNsYXNzPVwiZmxleCBhbGlnbi1jZW50ZXIganVzdGlmeS1jZW50ZXJcIiBzdHlsZT1cImhlaWdodDogNDIwcnB4O1wiPlxyXG5cdFx0XHQ8aW1nXHJcblx0XHRcdFx0c3JjPVwiLi4vLi4vc3RhdGljL211c2ljLzAuanBlZ1wiXHJcblx0XHRcdFx0bGF6eS1sb2FkXHJcblx0XHRcdFx0bm9kZT1cIndpZHRoRml4XCJcclxuXHRcdFx0XHRzdHlsZT1cImJvcmRlci1yYWRpdXM6IDM1cnB4O2JveC1zaGFkb3c6IDAgMnJweCA2cnB4IDA7XCJcclxuXHRcdFx0XHRhbHQ9XCJhbHRUZXh0XCJcclxuXHRcdFx0Lz5cclxuXHRcdDwvdmlldz5cclxuXHRcdDx2aWV3IGNsYXNzPVwiZmxleCBhbGlnbi1jZW50ZXIganVzdGlmeS1jZW50ZXIgZm9udFwiIHN0eWxlPVwiY29sb3I6ICM3YTgzODg7aGVpZ2h0OiA2NXJweDtcIj5cclxuXHRcdFx0PHZpZXc+e3sgZHVyYXRpb25UaW1lIHwgZm9ybWF0VGltZSB9fTwvdmlldz5cclxuXHRcdDwvdmlldz5cclxuXHRcdDx2aWV3IHN0eWxlPVwid2lkdGg6IDUwMHJweDtcIj5cclxuXHRcdFx0PHNsaWRlclxyXG5cdFx0XHRcdGJsb2NrLXNpemU9XCIxNlwiXHJcblx0XHRcdFx0YWN0aXZlQ29sb3I9XCIjZTQ4MjY3XCJcclxuXHRcdFx0XHRiYWNrZ3JvdW5kQ29sb3I9XCIjZWVmMmYzXCJcclxuXHRcdFx0XHQ6bWF4PVwiZHVyYXRpb25UaW1lXCJcclxuXHRcdFx0XHQ6dmFsdWU9XCJjdXJyZW50VGltZVwiXHJcblx0XHRcdFx0QGNoYW5nZT1cInNsaWRlclRvUGxheVwiXHJcblx0XHRcdFx0QGNoYW5naW5nPVwic2xpZGVyVG9QbGF5XCJcclxuXHRcdFx0Lz5cclxuXHRcdFx0PHZpZXc+e3sgY3VycmVudFRpbWUgfCBmb3JtYXRUaW1lIH19PC92aWV3PlxyXG5cdFx0PC92aWV3PlxyXG5cdFx0PHZpZXc+XHJcblx0XHRcdDx2aWV3IGNsYXNzPVwiZmxleCBhbGlnbi1jZW50ZXIganVzdGlmeS1jZW50ZXIgZm9udCB0ZXh0LWxpZ2h0LWJsYWNrXCIgc3R5bGU9XCJwYWRkaW5nLXRvcDogMTAwcnB4O1wiPlxyXG5cdFx0XHRcdDx2aWV3IGNsYXNzPVwiZmxleCBmbGV4LWNvbHVtbiBhbGlnbi1jZW50ZXJcIj5cclxuXHRcdFx0XHRcdDxteS1pY29uIGljb25JZD1cImljb24taWNvbi0tXCIgaWNvblNpemU9XCI2MFwiPjwvbXktaWNvbj5cclxuXHRcdFx0XHRcdDx0ZXh0IGNsYXNzPVwicHQtMVwiPuaSreaUvuWIl+ihqDwvdGV4dD5cclxuXHRcdFx0XHQ8L3ZpZXc+XHJcblx0XHRcdFx0PHZpZXcgY2xhc3M9XCJmbGV4IGZsZXgtY29sdW1uIGFsaWduLWNlbnRlclwiIHN0eWxlPVwicGFkZGluZzogMCA4MHJweDtcIj5cclxuXHRcdFx0XHRcdDxteS1pY29uIGljb25JZD1cImljb24taWNvbi0tXCIgaWNvblNpemU9XCI2MFwiPjwvbXktaWNvbj5cclxuXHRcdFx0XHRcdDx0ZXh0IGNsYXNzPVwicHQtMVwiPuaUtuiXjzwvdGV4dD5cclxuXHRcdFx0XHQ8L3ZpZXc+XHJcblx0XHRcdFx0PHZpZXcgY2xhc3M9XCJmbGV4IGZsZXgtY29sdW1uIGFsaWduLWNlbnRlclwiPlxyXG5cdFx0XHRcdFx0PG15LWljb24gaWNvbklkPVwiaWNvbi1pY29uLS1cIiBpY29uU2l6ZT1cIjYwXCI+PC9teS1pY29uPlxyXG5cdFx0XHRcdFx0PHRleHQgY2xhc3M9XCJwdC0xXCI+5aSc6Ze05qih5byPPC90ZXh0PlxyXG5cdFx0XHRcdDwvdmlldz5cclxuXHRcdFx0PC92aWV3PlxyXG5cdFx0PC92aWV3PlxyXG5cclxuXHRcdDx2aWV3IGNsYXNzPVwiZmxleCBqdXN0aWZ5LWJldHdlZW5cIj5cclxuXHRcdFx0PHZpZXc+XHJcblx0XHRcdFx0PHZpZXc+XHJcblx0XHRcdFx0XHQ8dGV4dCBjbGFzcz1cImZvbnRcIj7mrYzmm7I6PC90ZXh0PlxyXG5cdFx0XHRcdFx0PHRleHQgY2xhc3M9XCJmb250LXdlaWdodC1ib2xkXCI+e3sgYXVkaW9OYW1lIH19PC90ZXh0PlxyXG5cdFx0XHRcdDwvdmlldz5cclxuXHRcdFx0XHQ8dmlldz5cclxuXHRcdFx0XHRcdDx0ZXh0IGNsYXNzPVwiZm9udFwiPuatjOaJizo8L3RleHQ+XHJcblx0XHRcdFx0XHQ8dGV4dCBjbGFzcz1cImZvbnQtd2VpZ2h0LWJvbGRcIj57eyBzaW5nZXJOYW1lIH19PC90ZXh0PlxyXG5cdFx0XHRcdDwvdmlldz5cclxuXHRcdFx0PC92aWV3PlxyXG5cdFx0XHQ8bXktaWNvbiBpY29uSWQ9XCJpY29uLWppZXNoYW9cIiBpY29uU2l6ZT1cIjY1XCI+PC9teS1pY29uPlxyXG5cdFx0PC92aWV3PlxyXG5cclxuXHRcdDx2aWV3PlxyXG5cdFx0XHQ8dmlldyBjbGFzcz1cImZvbnQtbWQgcHQtMlwiPuatjOaJi+eugOS7i++8mjwvdmlldz5cclxuXHRcdFx0PHZpZXcgY2xhc3M9XCJ0ZXh0LWVsbGlwc2lzIHctMTAwXCI+e3sgc2luZ2VyU3lub3BzaXMgfX08L3ZpZXc+XHJcblx0XHQ8L3ZpZXc+XHJcblxyXG5cdFx0PHZpZXcgY2xhc3M9XCJmaXhlZC1ib3R0b20gc2hhZG93IHAtMlwiIHN0eWxlPVwiaGVpZ2h0OiA0MDBycHg7Ym9yZGVyLXJhZGl1czogMzBycHg7XCI+XHJcblx0XHRcdDx2aWV3IGNsYXNzPVwiZm9udC13ZWlnaHQtYm9sZCBmb250LW1kXCIgc3R5bGU9XCJoZWlnaHQ6IDUwcnB4O1wiPuWIl+ihqOmAieaLqTwvdmlldz5cclxuXHRcdFx0PHNjcm9sbC12aWV3IHNjcm9sbC15IHN0eWxlPVwiaGVpZ2h0OiAzNTBycHg7XCI+XHJcblx0XHRcdFx0PGJsb2NrIHYtZm9yPVwiKGl0ZW0sIGluZGV4KSBpbiBhdWRpb0xpc3RcIiA6a2V5PVwiaXRlbS5pZFwiPlxyXG5cdFx0XHRcdFx0PHZpZXcgY2xhc3M9XCJmbGV4IGFsaWduLWNlbnRlciBmb250IHB4LTJcIiBzdHlsZT1cImhlaWdodDogODVycHg7XCIgaG92ZXItY2xhc3M9XCJiZy1saWdodFwiPlxyXG5cdFx0XHRcdFx0XHQ8dGV4dCBjbGFzcz1cImZsZXgtMSB0ZXh0LWVsbGlwc2lzXCI+e3sgaXRlbS5hdWRpb05hbWUgfX08L3RleHQ+XHJcblx0XHRcdFx0XHRcdDx0ZXh0IGNsYXNzPVwiZmxleC0xIHRleHQtZWxsaXBzaXNcIj57eyBpdGVtLnNpbmdlck5hbWUgfX08L3RleHQ+XHJcblx0XHRcdFx0XHRcdDx2aWV3IGNsYXNzPVwiZmxleC0xIG1sLTMgZmxleCBhbGlnbi1jZW50ZXJcIj5cclxuXHRcdFx0XHRcdFx0XHQ8dGV4dCBjbGFzcz1cIm1yLTJcIj7mkq3mlL48L3RleHQ+XHJcblx0XHRcdFx0XHRcdFx0PG15LWljb24gaWNvbklkPVwiaWNvbi1ib2ZhbmdzYW5qaWFveGluZ1wiIGljb25TaXplPVwiNDBcIj48L215LWljb24+XHJcblx0XHRcdFx0XHRcdDwvdmlldz5cclxuXHRcdFx0XHRcdDwvdmlldz5cclxuXHRcdFx0XHQ8L2Jsb2NrPlxyXG5cdFx0XHQ8L3Njcm9sbC12aWV3PlxyXG5cdFx0PC92aWV3PlxyXG5cdDwvdmlldz5cclxuPC90ZW1wbGF0ZT5cclxuXHJcbjxzY3JpcHQ+XHJcbmltcG9ydCB1bml0IGZyb20gJy4uLy4uL2NvbW1vbi91bml0LmpzJztcclxuaW1wb3J0IHsgbWFwU3RhdGUsIG1hcEdldHRlcnMsIG1hcE11dGF0aW9ucywgbWFwQWN0aW9ucyB9IGZyb20gJ3Z1ZXgnO1xyXG5leHBvcnQgZGVmYXVsdCB7XHJcblx0ZGF0YSgpIHtcclxuXHRcdHJldHVybiB7fTtcclxuXHR9LFxyXG5cdGZpbHRlcnM6IHtcclxuXHRcdGZvcm1hdFRpbWUobnVtKSB7XHJcblx0XHRcdHJldHVybiB1bml0LmZvcm1hdFRpbWUobnVtKTtcclxuXHRcdH1cclxuXHR9LFxyXG5cdG1ldGhvZHM6IHtcclxuXHRcdC4uLm1hcEFjdGlvbnMoWydzbGlkZXJUb1BsYXknXSlcclxuXHR9LFxyXG5cdGNvbXB1dGVkOiB7XHJcblx0XHQuLi5tYXBTdGF0ZSh7XHJcblx0XHRcdGR1cmF0aW9uVGltZTogKHsgYXVkaW8gfSkgPT4gYXVkaW8uZHVyYXRpb25UaW1lLFxyXG5cdFx0XHRjdXJyZW50VGltZTogKHsgYXVkaW8gfSkgPT4gYXVkaW8uY3VycmVudFRpbWUsXHJcblx0XHRcdGF1ZGlvTGlzdDogKHsgYXVkaW8gfSkgPT4gYXVkaW8uYXVkaW9MaXN0XHJcblx0XHR9KSxcclxuXHRcdC4uLm1hcEdldHRlcnMoWydhdWRpb05hbWUnLCAnc2luZ2VyTmFtZScsICdzaW5nZXJTeW5vcHNpcyddKVxyXG5cdH1cclxufTtcclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+PC9zdHlsZT5cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///26\n");
+eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _unit = _interopRequireDefault(__webpack_require__(/*! ../../common/unit.js */ 18));\nvar _vuex = __webpack_require__(/*! vuex */ 19);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n{\n  data: function data() {\n    return {\n      listStatus: false, //\n      collectStatus: false,\n      nightStatus: false };\n\n  },\n  filters: {\n    formatTime: function formatTime(num) {\n      return _unit.default.formatTime(num);\n    } },\n\n  methods: _objectSpread(_objectSpread({},\n  (0, _vuex.mapActions)(['sliderToPlay'])), {}, {\n    changeStatus: function changeStatus(statusType) {\n      this[statusType] = !this[statusType];\n    } }),\n\n  computed: _objectSpread(_objectSpread({},\n  (0, _vuex.mapState)({\n    durationTime: function durationTime(_ref) {var audio = _ref.audio;return audio.durationTime;},\n    currentTime: function currentTime(_ref2) {var audio = _ref2.audio;return audio.currentTime;},\n    audioList: function audioList(_ref3) {var audio = _ref3.audio;return audio.audioList;} })),\n\n  (0, _vuex.mapGetters)(['audioName', 'singerName', 'singerSynopsis'])) };exports.default = _default;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVuaS1hcHA6Ly8vcGFnZXMvbXVzaWNEZXRhaWwvbXVzaWNEZXRhaWwudnVlIl0sIm5hbWVzIjpbImRhdGEiLCJsaXN0U3RhdHVzIiwiY29sbGVjdFN0YXR1cyIsIm5pZ2h0U3RhdHVzIiwiZmlsdGVycyIsImZvcm1hdFRpbWUiLCJudW0iLCJ1bml0IiwibWV0aG9kcyIsImNoYW5nZVN0YXR1cyIsInN0YXR1c1R5cGUiLCJjb21wdXRlZCIsImR1cmF0aW9uVGltZSIsImF1ZGlvIiwiY3VycmVudFRpbWUiLCJhdWRpb0xpc3QiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUEyRkE7QUFDQSxnRDtBQUNlO0FBQ2RBLE1BRGMsa0JBQ1A7QUFDTixXQUFPO0FBQ05DLGdCQUFVLEVBQUUsS0FETixFQUNhO0FBQ25CQyxtQkFBYSxFQUFFLEtBRlQ7QUFHTkMsaUJBQVcsRUFBRSxLQUhQLEVBQVA7O0FBS0EsR0FQYTtBQVFkQyxTQUFPLEVBQUU7QUFDUkMsY0FEUSxzQkFDR0MsR0FESCxFQUNRO0FBQ2YsYUFBT0MsY0FBS0YsVUFBTCxDQUFnQkMsR0FBaEIsQ0FBUDtBQUNBLEtBSE8sRUFSSzs7QUFhZEUsU0FBTztBQUNILHdCQUFXLENBQUMsY0FBRCxDQUFYLENBREc7QUFFTkMsZ0JBRk0sd0JBRU9DLFVBRlAsRUFFa0I7QUFDdkIsV0FBS0EsVUFBTCxJQUFpQixDQUFDLEtBQUtBLFVBQUwsQ0FBbEI7QUFDQSxLQUpLLEdBYk87O0FBbUJkQyxVQUFRO0FBQ0osc0JBQVM7QUFDWEMsZ0JBQVksRUFBRSxpQ0FBR0MsS0FBSCxRQUFHQSxLQUFILFFBQWVBLEtBQUssQ0FBQ0QsWUFBckIsRUFESDtBQUVYRSxlQUFXLEVBQUUsaUNBQUdELEtBQUgsU0FBR0EsS0FBSCxRQUFlQSxLQUFLLENBQUNDLFdBQXJCLEVBRkY7QUFHWEMsYUFBUyxFQUFFLCtCQUFHRixLQUFILFNBQUdBLEtBQUgsUUFBZUEsS0FBSyxDQUFDRSxTQUFyQixFQUhBLEVBQVQsQ0FESTs7QUFNSix3QkFBVyxDQUFDLFdBQUQsRUFBYyxZQUFkLEVBQTRCLGdCQUE1QixDQUFYLENBTkksQ0FuQk0sRSIsImZpbGUiOiIyNi5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcbi8vXHJcblxyXG5pbXBvcnQgdW5pdCBmcm9tICcuLi8uLi9jb21tb24vdW5pdC5qcyc7XHJcbmltcG9ydCB7IG1hcFN0YXRlLCBtYXBHZXR0ZXJzLCBtYXBNdXRhdGlvbnMsIG1hcEFjdGlvbnMgfSBmcm9tICd2dWV4JztcclxuZXhwb3J0IGRlZmF1bHQge1xyXG5cdGRhdGEoKSB7XHJcblx0XHRyZXR1cm4ge1xyXG5cdFx0XHRsaXN0U3RhdHVzOiBmYWxzZSwgLy9cclxuXHRcdFx0Y29sbGVjdFN0YXR1czogZmFsc2UsXHJcblx0XHRcdG5pZ2h0U3RhdHVzOiBmYWxzZVxyXG5cdFx0fTtcclxuXHR9LFxyXG5cdGZpbHRlcnM6IHtcclxuXHRcdGZvcm1hdFRpbWUobnVtKSB7XHJcblx0XHRcdHJldHVybiB1bml0LmZvcm1hdFRpbWUobnVtKTtcclxuXHRcdH1cclxuXHR9LFxyXG5cdG1ldGhvZHM6IHtcclxuXHRcdC4uLm1hcEFjdGlvbnMoWydzbGlkZXJUb1BsYXknXSksXHJcblx0XHRjaGFuZ2VTdGF0dXMoc3RhdHVzVHlwZSl7XHJcblx0XHRcdHRoaXNbc3RhdHVzVHlwZV09IXRoaXNbc3RhdHVzVHlwZV1cclxuXHRcdH1cclxuXHR9LFxyXG5cdGNvbXB1dGVkOiB7XHJcblx0XHQuLi5tYXBTdGF0ZSh7XHJcblx0XHRcdGR1cmF0aW9uVGltZTogKHsgYXVkaW8gfSkgPT4gYXVkaW8uZHVyYXRpb25UaW1lLFxyXG5cdFx0XHRjdXJyZW50VGltZTogKHsgYXVkaW8gfSkgPT4gYXVkaW8uY3VycmVudFRpbWUsXHJcblx0XHRcdGF1ZGlvTGlzdDogKHsgYXVkaW8gfSkgPT4gYXVkaW8uYXVkaW9MaXN0XHJcblx0XHR9KSxcclxuXHRcdC4uLm1hcEdldHRlcnMoWydhdWRpb05hbWUnLCAnc2luZ2VyTmFtZScsICdzaW5nZXJTeW5vcHNpcyddKVxyXG5cdH1cclxufTtcclxuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///26\n");
 
 /***/ }),
 /* 27 */
@@ -2146,7 +2180,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _D_H
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(__f__) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default =\n{\n  onLaunch: function onLaunch() {\n    __f__(\"log\", 'App Launch', \" at App.vue:4\");\n  },\n  onShow: function onShow() {\n    __f__(\"log\", 'App Show', \" at App.vue:7\");\n  },\n  onHide: function onHide() {\n    __f__(\"log\", 'App Hide', \" at App.vue:10\");\n  } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/lib/format-log.js */ 31)[\"default\"]))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVuaS1hcHA6Ly8vQXBwLnZ1ZSJdLCJuYW1lcyI6WyJvbkxhdW5jaCIsIm9uU2hvdyIsIm9uSGlkZSJdLCJtYXBwaW5ncyI6IjtBQUNlO0FBQ2RBLFVBQVEsRUFBRSxvQkFBVztBQUNwQixpQkFBWSxZQUFaO0FBQ0EsR0FIYTtBQUlkQyxRQUFNLEVBQUUsa0JBQVc7QUFDbEIsaUJBQVksVUFBWjtBQUNBLEdBTmE7QUFPZEMsUUFBTSxFQUFFLGtCQUFXO0FBQ2xCLGlCQUFZLFVBQVo7QUFDQSxHQVRhLEUiLCJmaWxlIjoiMzAuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcbmV4cG9ydCBkZWZhdWx0IHtcblx0b25MYXVuY2g6IGZ1bmN0aW9uKCkge1xuXHRcdGNvbnNvbGUubG9nKCdBcHAgTGF1bmNoJylcblx0fSxcblx0b25TaG93OiBmdW5jdGlvbigpIHtcblx0XHRjb25zb2xlLmxvZygnQXBwIFNob3cnKVxuXHR9LFxuXHRvbkhpZGU6IGZ1bmN0aW9uKCkge1xuXHRcdGNvbnNvbGUubG9nKCdBcHAgSGlkZScpXG5cdH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///30\n");
+eval("/* WEBPACK VAR INJECTION */(function(__f__) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default =\n{\n  onLaunch: function onLaunch() {\n    __f__(\"log\", 'App Launch', \" at App.vue:4\");\n  },\n  onShow: function onShow() {\n    __f__(\"log\", 'App Show', \" at App.vue:7\");\n  },\n  onHide: function onHide() {\n    __f__(\"log\", 'App Hide', \" at App.vue:10\");\n  } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/lib/format-log.js */ 31)[\"default\"]))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVuaS1hcHA6Ly8vQXBwLnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsR0FIQTtBQUlBO0FBQ0E7QUFDQSxHQU5BO0FBT0E7QUFDQTtBQUNBLEdBVEEsRSIsImZpbGUiOiIzMC5qcyIsInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQ+XHJcblx0ZXhwb3J0IGRlZmF1bHQge1xyXG5cdFx0b25MYXVuY2g6IGZ1bmN0aW9uKCkge1xyXG5cdFx0XHRjb25zb2xlLmxvZygnQXBwIExhdW5jaCcpXHJcblx0XHR9LFxyXG5cdFx0b25TaG93OiBmdW5jdGlvbigpIHtcclxuXHRcdFx0Y29uc29sZS5sb2coJ0FwcCBTaG93JylcclxuXHRcdH0sXHJcblx0XHRvbkhpZGU6IGZ1bmN0aW9uKCkge1xyXG5cdFx0XHRjb25zb2xlLmxvZygnQXBwIEhpZGUnKVxyXG5cdFx0fVxyXG5cdH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcblx0Lyrmr4/kuKrpobXpnaLlhazlhbFjc3MgKi9cclxuXHRAaW1wb3J0IHVybChcIi4vY29tbW9uL2Nzcy9mcmVlLmNzc1wiKTtcclxuXHRAaW1wb3J0IHVybChcIi4vY29tbW9uL2Nzcy9pY29uZm9udC5jc3NcIik7XHJcblx0QGltcG9ydCB1cmwoXCIuL2NvbW1vbi9jc3MvYW5pbWF0ZS5jc3NcIik7XHJcblx0QGltcG9ydCB1cmwoXCIuL2NvbW1vbi9jc3MvbXlhbmltYXRlLmNzc1wiKTtcclxuXHRAaW1wb3J0IHVybChcIi4vY29tbW9uL2Nzcy90aGVtZS5jc3NcIik7XHJcbjwvc3R5bGU+XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///30\n");
 
 /***/ }),
 /* 31 */
