@@ -10,11 +10,32 @@
             "path" : "pages/musicDetail/musicDetail",
             "style" : {}
         }
+        ,{
+            "path" : "pages/sort/sort",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#707070",
+		"selectedColor": "#8745FF",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+			"iconPath": "./static/tabbar/find.png",
+			"selectedIconPath": "static/tabbar/find-selected.png",
+			"pagePath": "pages/index/index",
+			"text": "首页"
+		}, {
+			"iconPath": "static/tabbar/my.png",
+			"selectedIconPath": "static/tabbar/my-selected.png",
+			"pagePath": "pages/sort/sort",
+			"text": "我的"
+		}]
 	}
 }

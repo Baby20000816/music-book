@@ -86,19 +86,23 @@
 						<text class="font-weight-bold">{{ singerName }}</text>
 					</view>
 				</view>
-				<my-icon iconId="icon-jieshao" iconSize="65"></my-icon>
+				<view @click="showSingerSynopsis"><my-icon iconId="icon-jieshao" iconSize="65"></my-icon></view>
 			</view>
 			<view>
 				<view class="font-md pt-2">歌手简介:</view>
 				<view class="text-ellipsis w-100">{{ singerSynopsis }}</view>
 			</view>
 		</view>
-		
 		<!-- 播放列表部分 -->
 		<view class="fixed-bottom shadow p-2 animated fadeInUp" style="height: 300rpx;border-radius: 30rpx;" v-else>
 			<scroll-view scroll-y style="height: 300rpx;">
 				<block v-for="(item, index) in audioList" :key="item.id">
-					<view class="flex align-center font px-2" style="height: 85rpx;" hover-class="bg-light" @tap="selectPlay(item.id)">
+					<view
+						class="flex align-center font px-2"
+						style="height: 85rpx;"
+						hover-class="bg-light"
+						@tap="selectPlay(item.id)"
+					>
 						<text class="flex-1 text-ellipsis">{{ item.audioName }}</text>
 						<text class="flex-1 text-ellipsis">{{ item.singerName }}</text>
 						<view class="flex-1 ml-3 flex align-center">
@@ -109,6 +113,16 @@
 				</block>
 			</scroll-view>
 		</view>
+		<!-- 歌手简介详情 -->
+		<uni-popup ref="popup">
+			<view
+				class="px-2 shadow"
+				style="width: 600rpx;height: 850rpx;border-radius: 40rpx;"
+				:class="nightStatus ? 'nightTheme' : 'bg-white'"
+			>
+				<text class="font">{{ singerSynopsis }}</text>
+			</view>
+		</uni-popup>
 	</view>
 </template>
 

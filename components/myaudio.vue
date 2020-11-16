@@ -74,7 +74,6 @@
 				'sliderToPlay'
 			]),
 			toDetailPage() {
-				console.log('点击了这个e')
 				uni.navigateTo({
 					url: '../../pages/musicDetail/musicDetail'
 				});
