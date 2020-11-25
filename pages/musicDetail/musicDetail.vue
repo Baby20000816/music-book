@@ -149,7 +149,6 @@ export default {
 	methods: {
 		...mapActions(['sliderToPlay', 'PlayOrPause', 'PreOrNext', 'selectPlay']),
 		changeStatus(statusType) {
-			console.log('点击了个');
 			this[statusType] = !this[statusType];
 		},
 		showSingerSynopsis() {
